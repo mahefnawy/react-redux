@@ -10,7 +10,7 @@ describe('Button', () => {
     const tree = TestRenderer.create(<Button {...buttonProps} />).toJSON();
 
     expect(tree).toMatchSnapshot();
-    //
+
     // expect(tree.children[0]).toEqual('+');
     // expect(tree.children[1]).toEqual('7');
   });
