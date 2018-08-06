@@ -5,7 +5,11 @@ class Button extends React.PureComponent {
     this.props.onClick(this.props.increment);
   };
   render() {
-    return <button onClick={this.clickHandler}>+{this.props.increment}</button>;
+    return (
+      <button className="button" onClick={this.clickHandler}>
+        +{this.props.increment}
+      </button>
+    );
   }
 }
 
